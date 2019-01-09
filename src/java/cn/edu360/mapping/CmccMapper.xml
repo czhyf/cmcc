@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu360.dao.CmccMapper">
+    <!--
+     idea 报红处理
+        File -> setting dialect ,设置成mysql 就可以了
+     -->
+    <!--查询业务概况表-->
+    <select id="select_Bus" resultType="cn.edu360.pojo.Business_overview">
+        select * from business_overview
+    </select>
+
+    <!--查询支付表-->
+    <select id="select_Pay" resultType="cn.edu360.pojo.Payment">
+        select * from payment
+    </select>
+
+    <!--查询充值表-->
+    <select id="select_Rec" resultType="cn.edu360.pojo.Recharge">
+        select * from recharge
+    </select>
+
+    <!--修改业务概况表-->
+    <update id="update_Bus" parameterType="cn.edu360.pojo.Business_overview">
+        update business_overview set Order_Count=#{Order_Count},Order_money=#{Order_money},Order_Success_rate=#{Order_Success_rate},Order_avg_time=#{Order_avg_time}
+    </update>
+
+    <!--修改支付表-->
+    <update id="update_Pay" parameterType="cn.edu360.pojo.Payment">
+        update payment set payment_avg_time=#{payment_avg_time},payment_max_time=#{payment_max_time},payment_min_time=#{payment_min_time},payment_busy_time=#{payment_busy_time},payment_leisure_time=#{payment_leisure_time}
+    </update>
+
+    <!--修改充值表-->
+    <update id="update_Rec" parameterType="cn.edu360.pojo.Recharge">
+        update recharge set recharge_avg_time=#{recharge_avg_time},recharge_max_time=#{recharge_max_time},recharge_min_time=#{recharge_min_time},recharge_busy_time=#{recharge_busy_time},recharge_leisure_time=#{recharge_leisure_time}
+    </update>
+
+</mapper>

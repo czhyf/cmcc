@@ -1,7 +1,7 @@
 # cmcc
 cmcc_dataplay
 
-#Õë¶ÔÓÚÊı¾İÕ¹Ê¾£¬ÀûÓÃssm + echarts Õ¹Ê¾
+#é’ˆå¯¹äºæ•°æ®å±•ç¤ºï¼Œåˆ©ç”¨ssm + echarts å±•ç¤º
 
-²é¿´ÊÓÆµµØÖ·£º
-http://beyondrule.natapp1.cc/cmcc/
+æŸ¥çœ‹è§†é¢‘åœ°å€ï¼š
+http://img.wordboy.cn/project/spark/cmcc/time.mp4
